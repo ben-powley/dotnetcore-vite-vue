@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - dotnet_vite</title>
+
+    <link rel="stylesheet" asp-href-include="~/dist/assets/main.css" />
+</head>
+<body>
+    <main>
+        @RenderBody()
+    </main>
+
+    <environment names="Development">
+        <script type="module" src="~/dist/@@vite/client"></script>
+        <script type="module" src="~/dist/js/main.js"></script>
+    </environment>
+
+    <environment names="Staging,Production">
+        <script type="module" asp-src-include="~/dist/assets/main.*.js"></script>
+    </environment>
+</body>
+</html>
