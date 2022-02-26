@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "echo Starting the development server &amp;amp;&amp;amp; vite",
+    "start": "echo Starting the development server && vite",
     "dev": "vite",
     "build": "vite build"
   },
