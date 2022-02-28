@@ -6,5 +6,5 @@ Currently, it's a bit janky to get up and running. To get it running, you need t
 
 - Run `npm install`
 - Run `cd ClientApp`
-- Run `npm run dev`
+- Run `npx vite`
 - Run the dotnet core app from the CLI or Visual Studio
